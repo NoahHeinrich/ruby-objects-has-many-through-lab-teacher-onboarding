@@ -17,4 +17,10 @@ class Patient
   def appointments
     Appointment.all.select { |app| app.patient == self }
   end
+  
+  def doctors
+    apps = self.appointments
+    docs = []
+    apps.each { |a| docs << a.doctor }
+  end
 end
