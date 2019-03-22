@@ -22,5 +22,6 @@ class Patient
     apps = self.appointments
     docs = []
     apps.each { |a| docs << a.doctor }
+    docs
   end
 end
