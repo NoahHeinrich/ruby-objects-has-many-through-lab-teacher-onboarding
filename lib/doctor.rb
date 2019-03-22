@@ -20,5 +20,7 @@ class Doctor
   
   def patients
     apps = self.appointments
+    pats = []
+    apps.each { |a| pats <<
   end
 end
